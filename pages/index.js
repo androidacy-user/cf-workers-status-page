@@ -48,10 +48,11 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
       <Head>
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS0SN718JX"></script>
+
 
 <script>
-
+{`
+const d=document.createElement('script');d.async=true,d.src='https://www.googletagmanager.com/gtag/js?id=G-RS0SN718JX'; document.head.appendChild(d);
   window.dataLayer = window.dataLayer || [];
 
   function gtag(){dataLayer.push(arguments);}
@@ -59,7 +60,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   gtag('js', new Date());
 
   gtag('config', 'G-RS0SN718JX');
-
+`}
 </script>
         <script>
           {`
