@@ -44,7 +44,11 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   return (
 
     <div className="min-h-screen">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS0SN718JX"></script>
+    
+      <Head>
+        <title>{config.settings.title}</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS0SN718JX"></script>
 
 <script>
 
@@ -57,9 +61,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   gtag('config', 'G-RS0SN718JX');
 
 </script>
-      <Head>
-        <title>{config.settings.title}</title>
-        <link rel="stylesheet" href="./style.css" />
         <script>
           {`
           function setTheme(theme) {
