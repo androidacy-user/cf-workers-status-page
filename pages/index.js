@@ -42,6 +42,19 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
   const slash = useKeyPress('/')
 
   return (
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS0SN718JX"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-RS0SN718JX');
+
+</script>
     <div className="min-h-screen">
       <Head>
         <title>{config.settings.title}</title>
