@@ -18,10 +18,10 @@ monitors:
   - id: website # unique identifier
     name: Website
     description: 'The Androidacy websit' # default=empty
-    url: 'https://wwww.androidacy.com/' # URL to fetch
+    url: 'https://www.androidacy.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: production-api
@@ -35,7 +35,7 @@ monitors:
   - id: vaultwarden
     name: Vaultwarden Host
     description: 'Vaultwarden is a safe place to dtore your passwords, compatible with Bitwarden clients'
-    url: 'https://bw.androidacycom/'
+    url: 'https://bw.androidacy.com/'
     method: GET
     expectStatus: 200
     linkable: true
