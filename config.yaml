@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: website # unique identifier
     name: Website
-    description: 'The Androidacy websit' # default=empty
+    description: 'The Androidacy website and web apps' # default=empty
     url: 'https://www.androidacy.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -26,7 +26,7 @@ monitors:
 
   - id: production-api
     name: API
-    description: 'API powering our website, apps, and more.'
+    description: 'Our rich and powerful API powers our website, apps, and more.'
     url: 'https://production-api.androidacy.com/ping'
     method: GET
     expectStatus: 204
@@ -34,7 +34,7 @@ monitors:
 
   - id: vaultwarden
     name: Vaultwarden Host
-    description: 'Vaultwarden is a safe place to dtore your passwords, compatible with Bitwarden clients'
+    description: 'Vaultwarden is a safe place to dtore your passwords, compatible with Bitwarden.'
     url: 'https://bw.androidacy.com/'
     method: GET
     expectStatus: 200
